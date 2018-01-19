@@ -1,4 +1,4 @@
-package homeWork.lesson1.task2;
+package lesson1.task2;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

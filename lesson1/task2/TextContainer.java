@@ -1,4 +1,4 @@
-package homeWork.lesson1.task2;
+package lesson1.task2;
 
 import java.io.FileWriter;
 import java.io.IOException;
