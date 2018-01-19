@@ -8,9 +8,9 @@ public class Main {
         MyClass myClass2;
 
         Serializable serializable = new Serializable(myClass1);
-        serializable.writeToFile("file.txt");
+        serializable.writeToFile("lesson1/task3/file.txt");
 
-        Deseriazable deseriazable = new Deseriazable("file1.txt");
+        Deseriazable deseriazable = new Deseriazable("lesson1/task3/file1.txt");
         myClass2 = (MyClass)deseriazable.get(new MyClass());
 
         System.out.println(myClass2);
