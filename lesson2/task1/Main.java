@@ -6,9 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        XmlParser xml = new XmlParser("D://javaFiles//train.xml");
+        XmlParser xml = new XmlParser("lesson2//task1//trains.xml");
         ListTrains allTrains = new ListTrains(xml.importTrains());
-        ArrayList<Train> trains = allTrains.getTrainsByDepartureTimeRange("1:00", "19:00");
+        ArrayList<Train> trains = allTrains.getTrainsByDepartureTimeRange("15:00", "19:00");
 
         for (Train train : trains) {
             train.printInformation();
