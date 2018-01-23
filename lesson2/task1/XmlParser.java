@@ -18,8 +18,8 @@ import java.util.GregorianCalendar;
 public class XmlParser {
 
     private File file;
-    Document document;
-    ArrayList<Train> trains;
+    private Document document;
+    private ArrayList<Train> trains;
 
     public XmlParser(String path) {
 

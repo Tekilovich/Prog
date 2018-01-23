@@ -8,7 +8,7 @@ import java.util.GregorianCalendar;
 
 public class ListTrains {
 
-    ArrayList<Train> trains = new ArrayList<Train>();
+    private ArrayList<Train> trains = new ArrayList<Train>();
 
     public ListTrains(ArrayList<Train> trains) {
         this.trains = trains;
