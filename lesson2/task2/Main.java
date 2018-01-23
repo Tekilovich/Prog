@@ -14,7 +14,7 @@ public class Main {
         StringBuilder result = new StringBuilder();
         String str;
 
-        try (BufferedReader reader = new BufferedReader(new FileReader("lesson2/task2/Contacts.xml"))){
+        try (BufferedReader reader = new BufferedReader(new FileReader("lesson2/task2/Contacts.gson"))){
 
             while ((str = reader.readLine()) != null) {
                 result.append(str);
