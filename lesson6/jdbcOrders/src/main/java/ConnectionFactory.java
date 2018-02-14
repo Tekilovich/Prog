@@ -6,7 +6,7 @@ public class ConnectionFactory {
 
     private static final String DB_CONNECTION = "jdbc:mysql://localhost:3306/mydb";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "dibal";
+    private static final String DB_PASSWORD = "***";
 
     public static Connection getConnection() {
         Connection connection = null;
