@@ -64,49 +64,21 @@ public class Main {
 
         String area;
         String address;
-        double sqft;
+        double sqft, price;
         int rooms;
-        double price;
 
         while (true) {
-            System.out.println("Input area");
-            area = reader.readLine();
-            System.out.println("Input adress");
-            address = reader.readLine();
-            while (true) {
-                try {
-                    System.out.println("square apartment");
-                    sqft = Double.parseDouble(reader.readLine());
-                    break;
-                } catch (Exception ex) {
-                    System.out.println("Format error");
-                }
-            }
-            while (true) {
-                try {
-                    System.out.println("Input number of rooms");
-                    rooms = Integer.parseInt(reader.readLine());
-                    break;
-                } catch (Exception ex) {
-                    System.out.println("Format error");
-                }
-            }
-            while (true) {
-                try {
-                    System.out.println("Input price");
-                    price = Double.parseDouble(reader.readLine());
-                    break;
-                } catch (Exception ex) {
-                    System.out.println("Format error");
-                }
-            }
+            area = Parameters.getStringFromConsole(reader, "Input area");
+            address = Parameters.getStringFromConsole(reader, "Input address");
+            sqft = Parameters.getDoubleFromConsole(reader, "square apartment");
+            rooms = Parameters.getIntFromConsole(reader, "Input number of rooms");
+            price = Parameters.getDoubleFromConsole(reader, "Input price");
 
             apartment = new Apartment(area, address, sqft, rooms, price);
 
             apartmentDAO.addApartment(apartment);
 
-            System.out.println("Do you want input next apartment? y or n");
-            String s = reader.readLine();
+            String s = Parameters.getStringFromConsole(reader, "Do you want input next apartment? y or n");
             if (!s.equals("y")) break;
         }
 
